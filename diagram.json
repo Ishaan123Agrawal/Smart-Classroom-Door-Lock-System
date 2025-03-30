@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "author": "ISHAAN AGRAWAL _ 21CSB0F14",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": -38.4, "left": -71.96, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo1", "top": -2, "left": 144, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "servo1:GND", "esp:GND.2", "black", [ "h-67.2", "v-57.6" ] ],
+    [ "servo1:V+", "esp:3V3", "gold", [ "h-48", "v-124.7", "h-211.2", "v57.6" ] ],
+    [ "servo1:PWM", "esp:13", "red", [ "h-48", "v144.2", "h-192", "v-86.4" ] ]
+  ],
+  "dependencies": {}
+}
